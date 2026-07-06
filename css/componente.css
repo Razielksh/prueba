@@ -1,0 +1,118 @@
+.carrusel-contenedor {
+  max-width: 850px;
+  width: 100%;
+  position: relative;
+  margin: 15px auto;
+  border-radius: 25px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  border: 2px solid #ccc;
+}
+
+.carrusel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.carrusel-slide {
+  width: 100%;
+  flex-shrink: 0;
+  height: 500px;
+  position: relative;
+}
+
+.carrusel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pie de imagen de fondo oscuro translúcido */
+.carrusel-texto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carrusel-texto h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Botones Anterior / Siguiente */
+.carrusel-boton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.carrusel-boton:hover {
+  opacity: 1;
+}
+
+.carrusel-boton.prev {
+  left: 10px;
+}
+
+.carrusel-boton.next {
+  right: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.seccion {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 auto 30px auto;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.seccion h2 {
+  color: #222;
+  font-size: 18px;
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}

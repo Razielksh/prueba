@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Imágenes</title>
+  <link rel="stylesheet" href="css/componente.css">
+</head>
+
+<body>
+
+  <h1>Carrusel de Imágenes</h1>
+
+  <div class="seccion">
+    <h2>Carrusel con navegación con Flechas</h2>
+    <div id="carrusel"></div>
+  </div>
+
+  <footer>
+    Huerta Garcia Oscar Raziel - Componente Carrusel
+  </footer>
+
+
+
+
+
+
+
+  <script src="js/componente.js"></script>
+
+  <script>
+    inicializarCarrusel("carrusel", {
+      imagenes: [
+        {
+          url: "img/erys.jpg",
+          titulo: "Albúm ERYS de Jaden Smith"
+        },
+        {
+          url: "img/borderline.jpeg",
+          titulo: "Albúm The Slow Rush de Tame Impala"
+        },
+        {
+          url: "img/eventually.jpg",
+          titulo: "Albúm Currents de Tame Impala"
+        }
+      ]
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
